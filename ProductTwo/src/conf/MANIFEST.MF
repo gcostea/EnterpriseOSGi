@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.producttwo
+Bundle-Version: 1.0.0
+Bundle-Name: Product Two
+Import-Package: org.osgi.framework, javax.servlet, javax.servlet.http,
+                javax.inject, javax.servlet.annotation, javax.persistence,
+                javax.persistence.metamodel, org.springframework.web.jsf,
+                org.springframework.web.context, org.springframework.web.context.support,
+                org.springframework.util, org.springframework.ui.context.support,
+                org.springframework.ui.context, org.eclipse.gemini.blueprint.extender,
+                org.eclipse.gemini.blueprint.context.support, org.eclipse.gemini.blueprint.context,
+                org.springframework.core.io, org.springframework.context, org.springframework.beans,
+                org.slf4j, org.springframework.beans.factory.config, org.osgi.service.jpa, org.apache.derby.jdbc,
+                com.product.api
+Bundle-ClassPath: WEB-INF/classes, WEB-INF/lib
+Web-ContextPath: /ProductTwo
+Spring-Context: *;create-asynchronously:=true

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:osgi="http://www.eclipse.org/gemini/blueprint/schema/blueprint"
+   xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.eclipse.org/gemini/blueprint/schema/blueprint
+       http://www.eclipse.org/gemini/blueprint/schema/blueprint/gemini-blueprint.xsd">
+
+    <osgi:reference id="serviceOne" interface="com.product.api.ServiceOne" />
+    <osgi:reference id="serviceThree" interface="com.product.api.ServiceThree" />
+       
+    <bean id="serviceTwoImpl" class="com.producttwo.services.ServiceTwoImpl">
+        <property name="serviceOne" ref="serviceOne" />
+        <property name="serviceThree" ref="serviceThree" />
+    </bean>
+    
+    <osgi:service id="serviceTwo" ref="serviceTwoImpl" interface="com.product.api.ServiceTwo" />
+    
+    <bean id="indexBackingBean" class="com.producttwo.backingbeans.IndexBackingBean" scope="request">
+        <property name="serviceTwo" ref="serviceTwoImpl" />
+    </bean>
+    
+</beans>

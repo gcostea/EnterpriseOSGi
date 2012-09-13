@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.web.project</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/web-project/3">
+            <name>ProductTwo</name>
+            <minimum-ant-version>1.6.5</minimum-ant-version>
+            <web-module-libraries>
+                <library dirs="200">
+                    <file>${reference.ProductAPI.jar}</file>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.org.springframework.aop-3.1.0.RELEASE.jar}</file>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.org.springframework.asm-3.1.0.RELEASE.jar}</file>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.org.springframework.aspects-3.1.0.RELEASE.jar}</file>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.org.springframework.beans-3.1.0.RELEASE.jar}</file>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.org.springframework.context-3.1.0.RELEASE.jar}</file>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.org.springframework.context.support-3.1.0.RELEASE.jar}</file>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.org.springframework.core-3.1.0.RELEASE.jar}</file>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.org.springframework.expression-3.1.0.RELEASE.jar}</file>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.org.springframework.jdbc-3.1.0.RELEASE.jar}</file>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.org.springframework.jms-3.1.0.RELEASE.jar}</file>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.org.springframework.orm-3.1.0.RELEASE.jar}</file>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.org.springframework.oxm-3.1.0.RELEASE.jar}</file>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.org.springframework.transaction-3.1.0.RELEASE.jar}</file>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.org.springframework.web-3.1.0.RELEASE.jar}</file>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.org.springframework.web.servlet-3.1.0.RELEASE.jar}</file>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.gemini-blueprint-extender-1.0.0.RELEASE.jar}</file>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.org.eclipse.gemini.blueprint.core-1.0.0.RELEASE.jar}</file>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.felix.jar}</file>
+                </library>
+            </web-module-libraries>
+            <web-module-additional-libraries/>
+            <source-roots>
+                <root id="src.dir"/>
+            </source-roots>
+            <test-roots>
+                <root id="test.src.dir"/>
+            </test-roots>
+        </data>
+        <references xmlns="http://www.netbeans.org/ns/ant-project-references/1">
+            <reference>
+                <foreign-project>ProductAPI</foreign-project>
+                <artifact-type>jar</artifact-type>
+                <script>build.xml</script>
+                <target>jar</target>
+                <clean-target>clean</clean-target>
+                <id>jar</id>
+            </reference>
+        </references>
+    </configuration>
+</project>
